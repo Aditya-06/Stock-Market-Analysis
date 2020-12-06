@@ -15,7 +15,7 @@ _Download and install Chrome Browser from_ https://www.google.com/chrome/.
 _ChromeDriver executable file is available at_ https://sites.google.com/a/chromium.org/chromedriver/downloads.
 
 
-## Dependancies:
+## Dependencies:
 ```
 selenium: 3.141.0
 beautifulsoup4: 4.7.1
@@ -26,7 +26,7 @@ mplfinance: 1.14.0
 lxml: 4.3.4
 ```
 
-## Install Dependancies
+## Install Dependencies
 
 if using the anaconda prompt
 ```
@@ -40,7 +40,37 @@ pip instal <package_name>
 
 ## Running the code:
 
-Once the dependencies are installed, we will start he webdriver and execute javascript.
+Once the dependencies are installed, we will start the webdriver and execute javascript.
 We then print page source to confirm whether the webdriver has returned an appropriate result. It should look something like this:
 
+![image](https://user-images.githubusercontent.com/56297484/101277796-e472e580-37dc-11eb-9791-81bcde138437.png)
+
+We then parse the html table on the website and store the values in a pandas dataframe
+
+![image](https://user-images.githubusercontent.com/56297484/101277831-2a2fae00-37dd-11eb-99e5-8cab54ca2a51.png)
+
+Now that we have the required data, we can begin plotting
+
+### Table | Open | Close
+
+![image](https://user-images.githubusercontent.com/56297484/101277818-14ba8400-37dd-11eb-8212-0df4d4b39bfc.png)
+
+### Candlestick plots
+
+Using plotly
+![image](https://user-images.githubusercontent.com/56297484/101277838-40d60500-37dd-11eb-9edb-e0ca7b5dcb2d.png)
+
+Using matplotlib and mpf
+![image](https://user-images.githubusercontent.com/56297484/101277862-6531e180-37dd-11eb-96e6-755507890f3a.png)
+
+### Returns:
+
+Plotting yearly retunrs on the stock
+![image](https://user-images.githubusercontent.com/56297484/101277880-8561a080-37dd-11eb-9bec-b10faa8bfc53.png)
+
+Plotting cumulative returns over 5 years
+![image](https://user-images.githubusercontent.com/56297484/101277919-c954a580-37dd-11eb-8a69-436ffffb69e2.png)
+
+Plotting a shared axis plot using seaborn
+![image](https://user-images.githubusercontent.com/56297484/101277940-df626600-37dd-11eb-9435-601ada5bfa7d.png)
 
