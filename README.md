@@ -38,6 +38,12 @@ if using command line
 pip instal <package_name>
 ```
 
+## Let's take a look at the website:
+
+![image](https://user-images.githubusercontent.com/56297484/101980674-111b7700-3c8d-11eb-9b99-484fe33feb90.png)
+
+The highlighted table contains the data we require to conduct our analysis
+
 ## Running the code:
 
 Once the dependencies are installed, we will start the webdriver and execute javascript.
